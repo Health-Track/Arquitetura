@@ -32,7 +32,7 @@ fact todosOsUsuariosEstaoNoHealthTrack {
 	all u: Usuario | one h: HealthTrack | usuarioNoHealthTrack[u,h]
 }
 
--- O exame precente a apenas um usuario
+-- O exame pertence a apenas um usuario
 fact todosOsExamesEstaoNoUsuario {
 	all e: Exame | one u: Usuario | exameNoUsuario[e,u]
 }
